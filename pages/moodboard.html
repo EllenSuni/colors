@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      rel="stylesheet"
+      id="font-link" />
+    <link
+      rel="stylesheet"
+      href="/styles/moodboard.css" />
+    <title>Moodboard</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="flex-row">
+          <li><a href="contrast.html">Kontrast</a></li>
+          <li><a href="moodboard.html">Moodboard</a></li>
+          <!-- <li><a href="cities.html">Cities</a></li>
+          <li><a href="chart.html">Chart.js</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-column">
+      <h1>Moodboard</h1>
+      <div
+        id="moodboard-container"
+        class="flex-column">
+        <h2
+          id="board-heading"
+          class="flex-row">
+          Rubrik
+        </h2>
+        <p id="board-text">
+          Färg är en sensorisk upplevelse som skapas av synliga ljusvågor. Det
+          är en kraftfull kommunikationsform och påverkar våra känslor, tankar
+          och beteenden på olika sätt. Varje färg har en unik betydelse och
+          associeras ofta med olika känslor eller symbolik.
+        </p>
+        <div>
+          <div id="pattern"></div>
+        </div>
+        <div class="swatches">
+          <div class="flex-column">
+            <div
+              class="palette-swatch"
+              id="light-shade"></div>
+            <p id="light-shade-hex"></p>
+          </div>
+          <div class="flex-column">
+            <div
+              class="palette-swatch"
+              id="light-accent"></div>
+            <p id="light-accent-hex"></p>
+          </div>
+          <div class="flex-column">
+            <div
+              class="palette-swatch"
+              id="main-color"></div>
+            <p id="main-color-hex"></p>
+          </div>
+          <div class="flex-column">
+            <div
+              class="palette-swatch"
+              id="dark-accent"></div>
+            <p id="dark-accent-hex"></p>
+          </div>
+          <div class="flex-column">
+            <div
+              class="palette-swatch"
+              id="dark-shade"></div>
+            <p id="dark-shade-hex"></p>
+          </div>
+        </div>
+      </div>
+      <form onsubmit="return false">
+        <label for="search-input">Typsnitt (caps-känslig):</label>
+        <input
+          type="text"
+          placeholder="T.ex. Montserrat"
+          id="search-input" />
+        <button
+          type="submit"
+          id="btn"
+          class="btn">
+          Skicka
+        </button>
+      </form>
+      <h4>
+        Hitta typsnitt:
+        <a
+          target="_blank"
+          href="https://fonts.google.com/">
+          Google fonts</a
+        >
+      </h4>
+    </main>
+
+    <footer class="flex-row">
+      <!-- <a href="/index.html"> Hem</a> -->
+    </footer>
+
+    <script src="/scripts/moodboard.js"></script>
+  </body>
+</html>

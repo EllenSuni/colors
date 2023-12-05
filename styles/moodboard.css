@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f7f4;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+}
+
+header {
+  grid-row: 1/2;
+}
+
+main {
+  grid-row: 2/3;
+}
+
+footer {
+  grid-row: 3/4;
+}
+
+nav > ul {
+  gap: 60px;
+  height: 100px;
+  list-style: none;
+}
+nav > ul li {
+  font-size: 1.4rem;
+}
+
+a {
+  color: #131313;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #e4dfd8;
+  color: #36302a;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  border: 1px solid #36302a;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+#pattern {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
+.top-left,
+.bottom-right {
+  width: 50px;
+  height: 50px;
+  border-radius: 0 100% 0 100%;
+}
+
+.top-right,
+.bottom-left {
+  width: 50px;
+  height: 50px;
+  border-radius: 100% 0 100% 0;
+}
+
+h1 {
+  margin: 20px;
+}
+
+#moodboard-container {
+  width: 60vw;
+  padding: 20px;
+  margin: 20px;
+  gap: 20px;
+}
+
+#board-heading {
+  width: 140px;
+  height: 70px;
+}
+
+#board-text {
+  width: 300px;
+  padding: 16px;
+}
+
+.swatches {
+  display: flex;
+}
+
+.palette-swatch {
+  width: 100px;
+  height: 60px;
+}
+
+label {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin: 20px;
+}/*# sourceMappingURL=moodboard.css.map */

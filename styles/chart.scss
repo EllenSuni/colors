@@ -1,0 +1,16 @@
+@use "partials/layout";
+@use "partials/shared";
+
+.chart-container {
+  width: 90vw;
+  margin-block: 50px;
+}
+
+#swatch {
+  width: 200px;
+  height: 100px;
+}
+
+#swatch-input {
+  margin: 20px 5px;
+}

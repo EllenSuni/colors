@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/styles/chart.css" />
+    <title>Chart</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="flex-row">
+          <li><a href="contrast.html">Kontrast</a></li>
+          <li><a href="moodboard.html">Moodboard</a></li>
+          <li><a href="cities.html">Cities</a></li>
+          <li><a href="chart.html">Chart.js</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="flex-row chart-container">
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <div class="swatch-container flex-column">
+        <div id="swatch"></div>
+        <form
+          onsubmit="return false"
+          class="hex-container flex-row">
+          <label for="swatch-input">Hex: </label>
+          <input
+            id="swatch-input"
+            type="text" />
+          <input
+            type="color"
+            id="swatch-picker" />
+        </form>
+      </div>
+    </main>
+
+    <footer class="flex-row">
+      <a href="/index.html"> Hem</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/scripts/chart.js"></script>
+  </body>
+</html>

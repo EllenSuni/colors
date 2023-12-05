@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f7f4;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+}
+
+header {
+  grid-row: 1/2;
+}
+
+main {
+  grid-row: 2/3;
+}
+
+footer {
+  grid-row: 3/4;
+}
+
+nav > ul {
+  gap: 60px;
+  height: 100px;
+  list-style: none;
+}
+nav > ul li {
+  font-size: 1.4rem;
+}
+
+a {
+  color: #131313;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #e4dfd8;
+  color: #36302a;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  border: 1px solid #36302a;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.chart-container {
+  width: 90vw;
+  margin-block: 50px;
+}
+
+#swatch {
+  width: 200px;
+  height: 100px;
+}
+
+#swatch-input {
+  margin: 20px 5px;
+}/*# sourceMappingURL=chart.css.map */

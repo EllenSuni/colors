@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/styles/contrast.css" />
+    <title>Färgkontrast</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="flex-row">
+          <li><a href="contrast.html">Kontrast</a></li>
+          <li><a href="moodboard.html">Moodboard</a></li>
+          <!-- <li><a href="cities.html">Cities</a></li>
+          <li><a href="chart.html">Chart.js</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="flex-column">
+        <section class="color-palette flex-row">
+          <div class="swatch-container">
+            <div
+              class="color-box light-shade"
+              id="light-shade-box"></div>
+            <form
+              onsubmit="return false"
+              class="hex-container flex-row">
+              <div>
+                <label for="light-shade-input">Hex:</label>
+                <input
+                  id="light-shade-input"
+                  type="text" />
+              </div>
+              <input
+                type="color"
+                id="light-shade-picker" />
+            </form>
+          </div>
+          <div class="swatch-container">
+            <div
+              class="color-box light-accent"
+              id="light-accent-box"></div>
+            <form
+              onsubmit="return false"
+              class="hex-container flex-row">
+              <div>
+                <label for="light-accent-input">Hex:</label>
+                <input
+                  id="light-accent-input"
+                  type="text" />
+              </div>
+              <input
+                type="color"
+                id="light-accent-picker" />
+            </form>
+          </div>
+          <div class="swatch-container">
+            <div
+              class="color-box main-color"
+              id="main-color-box"></div>
+            <form
+              onsubmit="return false"
+              class="hex-container flex-row">
+              <div>
+                <label for="main-color-input">Hex:</label>
+                <input
+                  id="main-color-input"
+                  type="text" />
+              </div>
+              <input
+                type="color"
+                id="main-color-picker" />
+            </form>
+          </div>
+          <div class="swatch-container">
+            <div
+              class="color-box dark-accent"
+              id="dark-accent-box"></div>
+            <form
+              onsubmit="return false"
+              class="hex-container flex-row">
+              <div>
+                <label for="dark-accent-input">Hex:</label>
+                <input
+                  id="dark-accent-input"
+                  type="text" />
+              </div>
+              <input
+                type="color"
+                id="dark-accent-picker" />
+            </form>
+          </div>
+          <div class="swatch-container">
+            <div
+              class="color-box dark-shade"
+              id="dark-shade-box"></div>
+            <form
+              onsubmit="return false"
+              class="hex-container flex-row">
+              <div>
+                <label for="dark-shade-input">Hex:</label>
+                <input
+                  id="dark-shade-input"
+                  type="text" />
+              </div>
+              <input
+                type="color"
+                id="dark-shade-picker" />
+            </form>
+          </div>
+        </section>
+        <form onsubmit="return false">
+          <input
+            type="button"
+            value="Kolla kontrast"
+            class="btn"
+            id="check-colors" />
+        </form>
+      </div>
+      <section class="flex-column">
+        <form onsubmit="return false">
+          <select
+            name=""
+            id="filter-select">
+            <option value="ALL">Alla kombinationer</option>
+            <option value="AA">Godkända kombinationer (minst AA)</option>
+            <option value="AAA">Godkända kombinationer (minst AAA)</option>
+          </select>
+        </form>
+        <div class="flex-row combination-section">
+          <span
+            class="loader"
+            id="loader"></span>
+          <section id="combination-list"></section>
+          <section id="selected-combination-list"></section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex-row">
+      <!-- <a href="/index.html"> Hem</a> -->
+    </footer>
+
+    <script src="/scripts/contrast.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+@use "partials/layout";
+@use "partials/shared";
+@use "partials/loader";
+
+.color-box {
+  width: 18vw;
+  height: 265px;
+  margin-bottom: 13px;
+}
+
+.hex-container {
+  gap: 7px;
+}
+
+input[type="text"] {
+  width: 60px;
+  height: 20px;
+}
+
+#check-colors {
+  width: 222px;
+  height: 52px;
+  margin-top: 50px;
+}
+
+select {
+  margin-block: 15px;
+}
+
+.combination-section {
+  width: 80vw;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.combination {
+  justify-content: start;
+  gap: 7px;
+}
+
+.combination-swatch {
+  margin-bottom: 5px;
+  width: 305px;
+  height: 33px;
+  & > p {
+    margin: auto 5px;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hex-container {
+    flex-direction: column;
+  }
+}

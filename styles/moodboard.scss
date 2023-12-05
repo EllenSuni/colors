@@ -1,0 +1,43 @@
+@use "partials/layout";
+@use "partials/shared";
+@use "partials/pattern";
+
+h1 {
+  margin: 20px;
+}
+
+#moodboard-container {
+  width: 60vw;
+  padding: 20px;
+  margin: 20px;
+  gap: 20px;
+}
+
+#board-heading {
+  width: 140px;
+  height: 70px;
+}
+
+#board-text {
+  width: 300px;
+  padding: 16px;
+}
+
+.swatches {
+  display: flex;
+}
+
+.palette-swatch {
+  width: 100px;
+  height: 60px;
+}
+
+label {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin: 20px;
+}
